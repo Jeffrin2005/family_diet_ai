@@ -1,0 +1,235 @@
+
+.content{
+  padding-top: 140px;
+  height: 190px;
+  padding-left: 15px;
+}
+.title{
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+/* .description{
+
+  /* width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 1rem;
+  height: 80px;
+  max-width: 360px;
+  text-align: center; */
+
+.gradient-title {
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: 800; /* Makes the text bold */
+  background: linear-gradient(90deg, #FF7E5F, #FEB47B); /* Orange gradient colors */
+  -webkit-background-clip: text; /* Clips the background to the text for WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent for WebKit browsers */
+  background-clip: text; /* Clips the background to the text for other browsers */
+  color: transparent; /* Makes the text transparent for other browsers */
+  /* Optional Enhancements */
+  text-align: center; /* Centers the title */
+  margin: 50px 0; /* Adds vertical spacing */
+}
+.multi-step-gradient-title {
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: 800;
+  background: linear-gradient(
+      to right, 
+      #FF8C00 0%, /* Dark Orange Start */
+      #FF8C00 25%, /* Dark Orange End */
+      #FFA500 25%, /* Light Orange Start */
+      #FFA500 50%, /* Light Orange End */
+      #FF8C00 50%, /* Dark Orange Start */
+      #FF8C00 75%, /* Dark Orange End */
+      #FFA500 75%, /* Light Orange Start */ 
+      #FFA500 100% /* Light Orange End */
+  );
+  -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* For Safari and Chrome */
+  background-clip: text; /* For Firefox */
+  color: transparent; /* For Firefox */
+  text-align: center; /* Optional: Center the title */
+  margin: 50px 0; /* Optional: Add vertical spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .multi-step-gradient-title {
+      font-size: 2.5rem; /* Smaller size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .multi-step-gradient-title {
+      font-size: 2rem; /* Even smaller for mobile */
+  }
+}
+
+/* Description Styles */
+.description {
+  font-size: 1.25rem; /* Adjusts the size for readability */
+  font-weight: 800; /* Normal font weight */
+  color: #333333; /* Dark grey color for good contrast */
+  text-align: center; /* Centers the description below the title */
+  max-width: 600px; /* Limits the width for better readability */
+  margin: 20px auto 0 auto; /* Adds spacing above and centers horizontally */
+  line-height: 1.6; /* Enhances readability */
+  padding: 0 20px; /* Adds horizontal padding on smaller screens */
+}
+
+.family-member-form {
+  margin-top: 30px; /* Adds spacing above the form */
+  text-align: center; /* Centers the form elements */
+}
+
+/* Label Styles */
+.family-member-label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333333; /* Dark grey for consistency */
+  margin-bottom: 10px; /* Spacing between label and select */
+  font-weight: 500; /* Slightly bolder for emphasis */
+  letter-spacing: 0.5px; /* Enhances readability */
+}
+
+/* Custom Select Wrapper */
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Select Styles */
+.family-member-select {
+  width: 200px; /* Sets a fixed width */
+  padding: 12px 40px 12px 15px; /* Adds padding, leaving space for the custom arrow */
+  font-size: 1rem; /* Sets readable font size */
+  border: 2px solid #FF8C00; /* Matches the dark orange color */
+  border-radius: 8px; /* More rounded corners for a modern look */
+  background-color: #ffffff; /* White background for contrast */
+  color: #333333; /* Dark text color */
+  appearance: none; /* Removes default styles in some browsers */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transitions for interactive states */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+/* Custom Arrow Styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #FF8C00;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown Select Hover and Focus States */
+.family-member-select:hover,
+.family-member-select:focus {
+  border-color: #FFA500; /* Changes border color on hover/focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhances shadow on hover/focus */
+  outline: none; /* Removes default outline */
+}
+
+/* Rotate Arrow on Focus */
+.family-member-select:focus + .custom-arrow {
+  transform: translateY(-50%) rotate(180deg); /* Rotates the arrow when focused */
+}
+
+/* Transition for Custom Arrow */
+.custom-arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown Select Invalid State */
+.family-member-select:invalid {
+  border-color: #FF4D4D; /* Red border to indicate error */
+}
+
+/* Optional: Animate the Arrow on Hover */
+.family-member-select:hover + .custom-arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+.next-button {
+  display: block; /* Ensures the button takes the full width available */
+  margin: 25px auto 0 auto; /* Centers the button horizontally with top margin */
+  padding: 12px 24px; /* Vertical and horizontal padding */
+  font-size: 1.1rem; /* Increases font size for better readability */
+  font-weight: 600; /* Makes the text semi-bold for emphasis */
+  border: 2px solid #FF8C00;
+  border-radius: 8px;
+  color: var(--text-light); /* Sets text color to light (e.g., white) */
+  background: linear-gradient(45deg, var(--primary-orange), var(--secondary-orange)); /* Maintains gradient background */
+  border: 2px solid #FF8C00; /* Always orange border */
+  border-radius: 10px; /* Matches dropdown's border-radius */
+  cursor: pointer;
+  transition: 
+      background 0.3s ease,
+      transform 0.2s ease,
+      border-color 0.3s ease,
+      color 0.3s ease; /* Smooth transitions for multiple properties */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+  width: 220px; /* Matches dropdown width */
+  text-align: center; /* Centers the button text */
+  text-transform: uppercase; /* Transforms text to uppercase for emphasis */
+  letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+.next-button:hover:not(:disabled) {
+  background: linear-gradient(45deg, var(--secondary-orange), var(--primary-orange)); /* Reverses gradient on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  border-color: var(--primary-orange); /* Keeps border color orange */
+  color: red; /* Ensures text remains white on gradient change */
+}
+
+.next-button:active:not(:disabled) {
+  transform: translateY(0); /* Returns to original position when active */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reverts shadow when active */
+}
+
+.next-button:focus:not(:disabled) {
+  outline: none; /* Removes default outline */
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5); /* Adds a focus ring for accessibility */
+}
+
+.next-button:disabled {
+  background: linear-gradient(45deg, #cccccc, #dddddd); /* Greyed-out gradient for disabled state */
+  border-color: var(--primary-orange); /* Keeps border color orange even when disabled */
+  cursor: not-allowed; /* Changes cursor to indicate non-interactivity */
+  box-shadow: none; /* Removes shadow when disabled */
+  color: red; /* Changes text color to grey when disabled */
+}
+
+.next-button:disabled:hover {
+  background: linear-gradient(45deg, #cccccc, #dddddd); /* Maintains greyed-out background on hover */
+  transform: translateY(0); /* Prevents movement on hover */
+  box-shadow: none; /* Ensures no shadow on hover */
+  color: red; /* Keeps text color grey on hover */
+}
+
+
+.description{
+  /* Existing styles */
+  /* Update to reflect weekly budget */
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #333333;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.family-member-form {
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,183 @@
+/* .success-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #e6ffe6;
+  border: 2px solid #00cc00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success-container h2 {
+  color: #006600;
+  margin-bottom: 20px;
+}
+
+.success-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.return-button {
+  padding: 10px 20px;
+  background-color: #00cc00;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.return-button:hover {
+  background-color: #009900;
+} */
+
+
+
+
+/* Container Styling */
+.success-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: #121212; /* Dark background */
+  border-radius: 20px;
+  border: 2px solid #333; /* Subtle border */
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); /* Green glow */
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  animation: rgb-border 10s infinite linear;
+}
+
+/* RGB Border Animation */
+@keyframes rgb-border {
+  0% { border-color: red; }
+  33% { border-color: blue; }
+  67% { border-color: green; }
+  100% { border-color: red; }
+}
+
+.success-container {
+  animation: rgb-border 10s infinite linear;
+}
+
+/* Icon Styling */
+.success-icon {
+  color: #ffffff; /* Bright green */
+  filter: drop-shadow(0 0 10px #000000) drop-shadow(0 0 20px #4d594d);
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.success-container h2 {
+  color: #ffffff; /* Bright green */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #000000, 0 0 20px #00FF00; /* Green glow */
+}
+
+/* Paragraph */
+.success-container p {
+  font-size: 1.3rem;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+
+/* Budget Form Styling */
+.budget-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Form Field */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Labels */
+.form-field label {
+  color: #FFF;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+.form-field input {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  color: #FFF;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Green glow */
+  font-size: 1.1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-field input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+}
+
+/* Submit Button */
+.budget-submit-button {
+  padding: 15px 50px;
+  background: linear-gradient(145deg, #000000, #000000);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Green glow */
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.budget-submit-button:hover {
+  background: linear-gradient(145deg, #005700, #00FF00);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .success-container {
+    padding: 40px 20px;
+  }
+
+  .success-container h2 {
+    font-size: 2rem;
+  }
+
+  .success-container p {
+    font-size: 1.1rem;
+  }
+
+  .budget-submit-button {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .success-container {
+    padding: 60px 80px;
+  }
+
+  .success-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .success-container p {
+    font-size: 1.3rem;
+  }
+
+  .budget-submit-button {
+    padding: 15px 50px;
+    font-size: 1.3rem;
+  }
+}

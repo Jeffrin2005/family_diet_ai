@@ -1,0 +1,142 @@
+/* Container Styling */
+.family-details-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.family-details-container h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styling */
+.family-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Member Section */
+.member-section {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ff7f50;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(255, 127, 80, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(255, 127, 80, 0.3);
+}
+
+.member-section h3 {
+  margin-bottom: 20px;
+  color: #ff7f50;
+  font-size: 1.8rem;
+}
+
+/* Labels */
+.member-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333333;
+  font-size: 1.1rem;
+}
+
+/* Input and Select Fields */
+.member-section input,
+.member-section select {
+  width: 100%;
+  padding: 12px 18px;
+  border: 1px solid #ff7f50;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.member-section input:focus,
+.member-section select:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+  outline: none;
+}
+
+/* Grid Layout for Form Fields */
+.member-section .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .member-section .form-group {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .member-section .form-group label,
+  .member-section .form-group input,
+  .member-section .form-group select {
+    flex: 1;
+  }
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 15px 35px;
+  background-color: #ff5722;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  align-self: center;
+  box-shadow: 0 8px 15px rgba(255, 87, 34, 0.3);
+}
+
+.submit-button:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(230, 74, 25, 0.4);
+}
+
+.submit-button:active {
+  background-color: #d84315;
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(216, 67, 21, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .family-details-container {
+    padding: 30px 20px;
+  }
+
+  .family-details-container h2 {
+    font-size: 2rem;
+  }
+
+  .member-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 15px 0;
+  }
+}

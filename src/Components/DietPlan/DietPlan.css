@@ -1,0 +1,141 @@
+.diet-plan-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: #121212; /* Dark background */
+  border-radius: 20px;
+  border: 2px solid #333; /* Subtle border */
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); /* Green glow */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  color: #FFF;
+  animation: rgb-border 10s infinite linear;
+}
+
+@keyframes rgb-border {
+  0% { border-color: red; }
+  33% { border-color: blue; }
+  67% { border-color: green; }
+  100% { border-color: red; }
+}
+
+.diet-plan-container {
+  animation: rgb-border 10s infinite linear;
+}
+
+.diet-plan-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #ffffff; /* Bright green */
+  text-shadow: 0 0 10px #107710, 0 0 20px #0a670a; /* Green glow */
+}
+
+.diet-plan-card {
+  background: #000000;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(13, 223, 223, 0.5); /* Green glow */
+}
+
+.diet-plan-card h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.diet-plan-card h3 svg {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.diet-plan-text {
+  background: #000000;
+  padding: 15px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  color: #00ff3c;
+  box-shadow: 0 0 10px rgba(119, 8, 255, 0.5);
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .diet-plan-container {
+    padding: 30px 10px;
+  }
+
+  .diet-plan-container h2 {
+    font-size: 2rem;
+  }
+
+  .diet-plan-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .diet-plan-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .diet-plan-container {
+    padding: 60px 80px;
+  }
+
+  .diet-plan-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .diet-plan-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .diet-plan-text {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/* Spinner Styles */
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #4CAF50; /* Green color */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto; /* Center the spinner horizontally */
+  margin-top: 50px; /* Add some top margin */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: Center the spinner vertically within its container */
+.diet-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spinner-icon {
+  font-size: 50px;
+  color: #4CAF50;
+  animation: spin 2s linear infinite;
+  margin-bottom: 20px;
+}
+
